@@ -1,6 +1,6 @@
 {
-  "release": 7,
-  "name": "wg-easy",
+  "release": "0.7.1",
+  "name": "wg-easy-m3",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",

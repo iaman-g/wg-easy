@@ -1,9 +1,9 @@
 {
-  "1": "Initial version. Enjoy!",
-  "2": "You can now rename a client, and update the address. Enjoy!",
-  "3": "Many improvements and small changes. Enjoy!",
-  "4": "Now with pretty charts for client's network speed. Enjoy!",
-  "5": "Many small improvements & feature requests. Enjoy!",
-  "6": "Many small performance improvements & bug fixes. Enjoy!",
-  "7": "Improved the look & performance of the upload/download chart."
+  "0.1.0": "Initial version. Enjoy!",
+  "0.2.0": "You can now rename a client, and update the address. Enjoy!",
+  "0.3.0": "Many improvements and small changes. Enjoy!",
+  "0.4.0": "Now with pretty charts for client's network speed. Enjoy!",
+  "0.5.0": "Many small improvements & feature requests. Enjoy!",
+  "0.6.0": "Many small performance improvements & bug fixes. Enjoy!",
+  "0.8.0": "Improved the look & performance of the upload/download chart."
 }
