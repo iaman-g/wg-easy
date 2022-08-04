@@ -1,0 +1,159 @@
+* {
+	transition:
+		background 0.25s ease,
+		color 0.25s ease;
+}
+
+::selection {
+    background: var(--md-sys-color-inverse-on-surface-dark);
+    color: var(--md-sys-color-inverse-surface-dark);
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 32px;
+    background-color: #e9ddff;
+    background-color: var(--md-sys-color-inverse-surface-dark);
+}
+
+::-webkit-scrollbar {
+    background: #23005c;
+    background: var(--md-sys-color-inverse-on-surface-dark);
+}
+
+body {
+	font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	background-color: var(--md-sys-color-background);
+}
+
+.material-background--primary-container {
+	background-color: var(--md-sys-color-primary-container);
+}
+.material-background--secondary-container {
+	background-color: var(--md-sys-color-secondary-container);
+}
+.material-background--tertiary-container {
+	background-color: var(--md-sys-color-tertiary-container);
+}
+.material-background--primary {
+	background-color: var(--md-sys-color-primary);
+}
+.material-background--secondary {
+	background-color: var(--md-sys-color-secondary);
+}
+.material-background--tertiary {
+	background-color: var(--md-sys-color-tertiary);
+}
+
+.material-container {
+	border-radius: 2rem;
+	padding: 1.5rem 1.3rem;
+}
+.material-container--primary {
+	color: var(--md-sys-color-on-primary);
+	background-color: var(--md-sys-color-primary);
+}
+.material-container--secondary {
+	color: var(--md-sys-color-on-secondary);
+	background-color: var(--md-sys-color-secondary);
+}
+.material-container--color-on-secondary {
+	color: var(--md-sys-color-secondary);
+	background-color: var(--md-sys-color-secondary-container);
+}
+.material-container--tertiary {
+	color: var(--md-sys-color-on-tertiary);
+	background-color: var(--md-sys-color-tertiary);
+}
+
+.material-text--on-background {
+	color: var(--md-sys-color-on-background);
+}
+
+.material-focus-outline:focus {
+    border: var(--md-sys-color-outline) solid 2px;
+}
+
+.material-button {
+    transition: background .25s ease,color .25s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    padding: 0rem 1.5rem;
+    border-radius: 100px;
+    text-decoration: none;
+    line-height: 3rem;
+    height: 3rem;
+}
+.material-button--primary {
+	color: var(--md-sys-color-on-primary-container);
+    background-color: var(--md-sys-color-primary-container);
+}
+.material-button--tertiary {
+	color: var(--md-sys-color-on-tertiary-container);
+    background-color: var(--md-sys-color-tertiary-container);
+}
+
+.material-mask--jagged-circle {
+	-webkit-mask-image: url(../../svg/m3-jagged-circle.svg);
+	-webkit-mask-repeat: no-repeat;
+	-webkit-mask-size: contain;
+    -webkit-mask-position: center;
+	mask-image: url(../../svg/m3-jagged-circle.svg);
+	mask-repeat: no-repeat;
+	mask-size: contain;
+    mask-position: center;
+}
+
+
+.hero-banner {
+	transition: background .25s ease,color .25s ease;
+    color: var(--md-sys-color-on-primary-container);
+    background-color: var(--md-sys-color-primary-container);
+    display: flex;
+    padding: 5rem 2.25rem;
+    border-radius: 0rem;
+    margin-bottom: 2rem;
+    position: relative;
+    overflow: hidden;
+    flex-grow: 1;
+    clip-path: inset(0 round 0rem 0rem 2rem 2rem);
+    min-height: 25vh;
+	display: flex;
+    align-items: stretch;
+}
+
+.hero-banner__text-container {
+	display: flex;
+    flex-direction: column;
+}
+
+.hero-banner__header {
+    font-weight: 500;
+    font-size: 4rem;
+    margin: 1rem 0rem 1.5rem;
+}
+
+.hero-banner__subheader {
+    font-weight: 400;
+    font-size: 1.1rem;
+    margin-bottom: auto;
+}
+
+.hero-banner__img {
+	top: 0%;
+    left: 0%;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    -webkit-mask: linear-gradient(to right,transparent 45%,#000);
+    mask: linear-gradient(to right,transparent 45%,#000);
+    transition: opacity .25s ease;
+    -webkit-user-select: none;
+    user-select: none;
+    object-position: top;
+    object-fit: cover;
+    filter: blur(7.5px);
+    opacity: 40%;
+}
