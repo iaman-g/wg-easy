@@ -45,6 +45,14 @@ body {
 	background-color: var(--md-sys-color-tertiary);
 }
 
+.material-text--on-background {
+	color: var(--md-sys-color-on-background);
+}
+
+.material-focus-outline:focus {
+    border: var(--md-sys-color-outline) solid 2px;
+}
+
 .material-button {
     transition: background .25s ease,color .25s ease;
     display: flex;
