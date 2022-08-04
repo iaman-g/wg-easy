@@ -2,13 +2,19 @@
 <html>
 
 <head>
-  <title>WireGuard</title>
+  <title>Dartegnian's WireGuard Instance</title>
   <link href="./css/vendor/tailwind.min.css" rel="stylesheet">
+  <link href="./css/material/styles.css" rel="stylesheet">
+  <link href="./css/material/material-you.css" rel="stylesheet">
   <link rel="manifest" href="./manifest.json">
   <link rel="icon" type="image/png" href="./img/favicon.png">
   <link rel="apple-touch-icon" href="./img/apple-touch-icon.png">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="apple-mobile-web-app-capable" content="yes">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="preload" as="style"
+		onload="this.rel = 'stylesheet'" crossorigin />
 </head>
 
 <style>
@@ -17,9 +23,15 @@
   }
 </style>
 
-<body class="bg-gray-50">
+<body class="material-theme">
 
   <div id="app">
+	<article class="hero-banner">
+		<section class="hero-banner__text-container">
+		<h1 class="hero-banner__header">Dartegnian's WireGuard Instance</h1>
+		</section>
+		<img draggable="false" class="hero-banner__img hero-banner__img--first-image" src="./img/diner-min.jpg" alt="First hero banner diner image">
+	</article>
 
     <div v-cloak class="container mx-auto max-w-3xl">
 
@@ -33,10 +45,6 @@
               d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
           </svg>
         </span>
-        <h1 class="text-4xl font-medium mt-10 mb-2">
-          <img src="./img/logo.png" width="32" class="inline align-middle" />
-          <span class="align-middle">WireGuard</span>
-        </h1>
         <h2 class="text-sm text-gray-400 mb-10"></h2>
 
         <div v-if="latestRelease" class="bg-red-800 p-4 text-white text-sm font-small mb-10 rounded-md shadow-lg"
@@ -464,22 +472,23 @@
       </div>
 
       <div v-if="authenticated === false">
-        <h1 class="text-4xl font-medium my-16 text-gray-700 text-center">WireGuard</h1>
 
-        <form @submit="login" class="shadow rounded-md bg-white mx-auto w-64 p-5 overflow-hidden mt-10">
+        <form @submit="login" class="material-container material-container--primary mx-auto w-64 p-5 overflow-hidden mt-10">
           <!-- Avatar -->
-          <div class="h-20 w-20 mb-10 mt-5 mx-auto rounded-full bg-red-800 relative overflow-hidden">
-            <svg class="w-10 h-10 m-5 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
-              fill="currentColor">
-              <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" />
-            </svg>
+          <div class="material-container--color-on-secondary material-mask--jagged-circle h-40 w-40 mb-10 mt-5 mx-auto rounded-full relative overflow-hidden flex p-3">
+            <div class="material-container--tertiary material-mask--jagged-circle flex-1 flex mx-auto">
+				<svg class="w-20 h-20 m-auto text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+					fill="currentColor">
+					<path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" />
+				</svg>
+			</div>
           </div>
 
-          <input type="password" name="password" placeholder="Password" v-model="password"
-            class="px-3 py-2 text-sm text-gray-500 mb-5 border-2 border-gray-100 rounded-lg w-full focus:border-red-800 outline-none" />
+          <input type="password" name="password" autocomplete="current-password" placeholder="Password" v-model="password"
+            class="px-3 py-2 text-sm text-gray-500 mb-5 border-2 border-gray-100 rounded-lg w-full material-focus-outline outline-none" />
 
           <button v-if="authenticating"
-            class="bg-red-800 w-full rounded shadow py-2 text-sm text-white cursor-not-allowed">
+            class="material-button material-button--primary w-full py-2 text-sm cursor-not-allowed">
             <svg class="w-5 animate-spin mx-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
               fill="currentColor">
               <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
@@ -489,10 +498,10 @@
             </svg>
           </button>
           <input v-if="!authenticating && password" type="submit"
-            class="bg-red-800 w-full rounded shadow py-2 text-sm text-white hover:bg-red-700 transition cursor-pointer"
+            class="material-button material-button--primary w-full py-2 text-sm hover:bg-red-700 transition cursor-pointer"
             value="Sign In">
           <input v-if="!authenticating && !password" type="submit"
-            class="bg-gray-200 w-full rounded shadow py-2 text-sm text-white cursor-not-allowed" value="Sign In">
+            class="material-button material-button--primary w-full py-2 text-sm cursor-not-allowed" value="Sign In">
         </form>
       </div>
 
@@ -510,10 +519,12 @@
 
     </div>
 
-    <p v-cloak class="text-center m-10 text-gray-300 text-xs">Made by <a target="_blank" class="hover:underline"
-        href="https://emilenijssen.nl/?ref=wg-easy">Emile Nijssen</a> · <a class="hover:underline"
+    <p v-cloak class="text-center m-10 material-text--on-background text-xs">Made by <a target="_blank" class="hover:underline"
+        href="https://emilenijssen.nl/?ref=wg-easy">Emile Nijssen</a>, tweaked by  <a target="_blank" class="hover:underline"
+        href="https://dartegnian.com/?ref=wg-easy-m3">Dartegnian</a> · <a class="hover:underline"
         href="https://github.com/sponsors/WeeJeWel" target="_blank">Donate</a> · <a class="hover:underline"
-        href="https://github.com/weejewel/wg-easy" target="_blank">GitHub</a></p>
+        href="https://github.com/weejewel/wg-easy" target="_blank">Original GitHub</a>, <a class="hover:underline"
+        href="https://github.com/Dartegnian/wg-easy-m3" target="_blank">M3 GitHub</a></p>
 
 
   </div>
