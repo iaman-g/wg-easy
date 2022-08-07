@@ -84,6 +84,10 @@ body {
     text-decoration: none;
     line-height: 3rem;
     height: 3rem;
+    border: transparent solid 2px;
+}
+.material-button:hover {
+    border: var(--md-sys-color-outline) solid 2px;
 }
 .material-button--primary {
 	color: var(--md-sys-color-on-primary-container);
