@@ -36,15 +36,6 @@
     <div v-cloak class="container mx-auto max-w-3xl">
 
       <div v-if="authenticated === true">
-        <span v-if="requiresPassword"
-          class="text-sm text-gray-400 mb-10 mr-2 mt-3 cursor-pointer hover:underline float-right" @click="logout">
-          Logout
-          <svg class="h-3 inline" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-            stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
-          </svg>
-        </span>
         <h2 class="text-sm text-gray-400 mb-10"></h2>
 
         <div v-if="latestRelease" class="material-background--tertiary p-4 text-white text-sm font-small mb-10 rounded-md shadow-lg"
@@ -67,7 +58,7 @@
             <div class="flex-grow">
               <p class="text-2xl font-medium">Clients</p>
             </div>
-            <div class="flex-shrink-0">
+            <div class="flex flex-shrink-0">
               <button @click="clientCreate = true; clientCreateName = '';"
                 class="material-button material-button--primary inline-flex items-center transition">
                 <svg class="w-4 mr-2" inline xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -77,6 +68,15 @@
                 </svg>
                 <span class="text-sm">New</span>
               </button>
+			  <button v-if="requiresPassword"
+			  	class="material-button material-button--primary ml-2 cursor-pointer float-right" @click="logout">
+				<svg class="h-3 inline mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+					stroke="currentColor">
+					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+					d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
+				</svg>
+				Logout
+			  </button>
             </div>
           </div>
 
@@ -141,7 +141,7 @@
                   <div
                     v-if="client.latestHandshakeAt && ((new Date() - new Date(client.latestHandshakeAt) < 1000 * 60 * 10))">
                     <div class="animate-ping w-4 h-4 p-1 bg-red-100 rounded-full absolute -bottom-1 -right-1"></div>
-                    <div class="w-2 h-2 material-background--tertiary rounded-full absolute bottom-0 right-0"></div>
+                    <div class="w-2 h-2 material-background--secondary-container rounded-full absolute bottom-0 right-0"></div>
                   </div>
                 </div>
 
