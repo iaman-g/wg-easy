@@ -158,6 +158,5 @@ body {
     user-select: none;
     object-position: top;
     object-fit: cover;
-    filter: blur(7.5px);
     opacity: 40%;
 }
