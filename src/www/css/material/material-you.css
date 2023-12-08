@@ -65,6 +65,10 @@ body {
 	background-color: var(--md-sys-color-tertiary-container);
 }
 
+.material-outline {
+	border-color: var(--md-sys-color-outline);
+}
+
 .material-text--on-background {
 	color: var(--md-sys-color-on-background);
 }
@@ -82,16 +86,15 @@ body {
     padding: 0rem 1.5rem;
     border-radius: 100px;
     text-decoration: none;
-    line-height: 3rem;
     height: 3rem;
     border: transparent solid 2px;
 }
 .material-button:hover {
     border: var(--md-sys-color-outline) solid 2px;
 }
-.material-button--primary {
-	color: var(--md-sys-color-on-primary-container);
-    background-color: var(--md-sys-color-primary-container);
+.material-button--filled-primary {
+	color: var(--md-sys-color-on-primary);
+	background-color: var(--md-sys-color-primary);
 }
 .material-button--tertiary {
 	color: var(--md-sys-color-on-tertiary-container);

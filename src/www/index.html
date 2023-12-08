@@ -85,7 +85,7 @@
             </div>
             <div class="flex flex-shrink-0">
               <button @click="clientCreate = true; clientCreateName = '';"
-                class="material-button material-button--primary inline-flex items-center transition">
+                class="material-button material-button--filled-primary inline-flex items-center transition">
                 <svg class="w-4 mr-2" inline xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                   stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -94,7 +94,7 @@
                 <span class="text-sm">New</span>
               </button>
 			  <button v-if="requiresPassword"
-			  	class="material-button material-button--primary ml-2 cursor-pointer float-right" @click="logout">
+			  	class="material-button material-button--filled-primary ml-2 cursor-pointer float-right" @click="logout">
 				<svg class="h-3 inline mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
 					stroke="currentColor">
 					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -510,10 +510,10 @@
           </div>
 
           <input type="password" name="password" autocomplete="current-password" placeholder="Password" v-model="password"
-            class="px-3 py-2 text-sm text-gray-500 mb-5 border-2 border-gray-100 rounded-lg w-full material-focus-outline outline-none" />
+            class="px-3 py-2 text-sm material-basic--secondary mb-5 border-2 material-outline rounded-lg w-full material-focus-outline outline-none" />
 
           <button v-if="authenticating"
-            class="material-button material-button--primary w-full py-2 text-sm cursor-not-allowed">
+            class="material-button material-button--filled-primary w-full py-2 text-sm cursor-not-allowed">
             <svg class="w-5 animate-spin mx-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
               fill="currentColor">
               <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
@@ -523,10 +523,10 @@
             </svg>
           </button>
           <input v-if="!authenticating && password" type="submit"
-            class="material-button material-button--primary w-full py-2 text-sm transition cursor-pointer"
+            class="material-button material-button--filled-primary w-full py-2 text-sm transition cursor-pointer"
             value="Sign In">
           <input v-if="!authenticating && !password" type="submit"
-            class="material-button material-button--primary w-full py-2 text-sm cursor-not-allowed" value="Sign In">
+            class="material-button material-button--filled-primary w-full py-2 text-sm cursor-not-allowed" value="Sign In">
         </form>
       </div>
 
