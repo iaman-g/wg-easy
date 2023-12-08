@@ -49,20 +49,20 @@ body {
 	padding: 1.5rem 1.3rem;
 }
 .material-container--primary {
-	color: var(--md-sys-color-on-primary);
-	background-color: var(--md-sys-color-primary);
+	color: var(--md-sys-color-on-primary-container);
+	background-color: var(--md-sys-color-primary-container);
 }
 .material-container--secondary {
-	color: var(--md-sys-color-on-secondary);
-	background-color: var(--md-sys-color-secondary);
-}
-.material-container--color-on-secondary {
-	color: var(--md-sys-color-secondary);
+	color: var(--md-sys-color-on-secondary-container);
 	background-color: var(--md-sys-color-secondary-container);
 }
+.material-basic--secondary {
+	color: var(--md-sys-color-secondary);
+	background-color: var(--md-sys-color-on-secondary);
+}
 .material-container--tertiary {
-	color: var(--md-sys-color-on-tertiary);
-	background-color: var(--md-sys-color-tertiary);
+	color: var(--md-sys-color-on-tertiary-container);
+	background-color: var(--md-sys-color-tertiary-container);
 }
 
 .material-text--on-background {
