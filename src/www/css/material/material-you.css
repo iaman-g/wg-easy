@@ -52,14 +52,28 @@ body {
 	color: var(--md-sys-color-on-primary-container);
 	background-color: var(--md-sys-color-primary-container);
 }
-.material-container--secondary {
-	color: var(--md-sys-color-on-secondary-container);
-	background-color: var(--md-sys-color-secondary-container);
+.material-inverted--primary {
+	color: var(--md-sys-color-primary-container);
+	background-color: var(--md-sys-color-on-primary-container);
+}
+
+.material-colored--secondary {
+	color: var(--md-sys-color-on-secondary);
+	background-color: var(--md-sys-color-secondary);
 }
 .material-basic--secondary {
 	color: var(--md-sys-color-secondary);
 	background-color: var(--md-sys-color-on-secondary);
 }
+.material-container--secondary {
+	color: var(--md-sys-color-on-secondary-container);
+	background-color: var(--md-sys-color-secondary-container);
+}
+.material-inverted--secondary {
+	color: var(--md-sys-color-secondary-container);
+	background-color: var(--md-sys-color-on-secondary-container);
+}
+
 .material-container--tertiary {
 	color: var(--md-sys-color-on-tertiary-container);
 	background-color: var(--md-sys-color-tertiary-container);
