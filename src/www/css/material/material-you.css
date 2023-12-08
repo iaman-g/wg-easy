@@ -49,20 +49,39 @@ body {
 	padding: 1.5rem 1.3rem;
 }
 .material-container--primary {
-	color: var(--md-sys-color-on-primary);
-	background-color: var(--md-sys-color-primary);
+	color: var(--md-sys-color-on-primary-container);
+	background-color: var(--md-sys-color-primary-container);
 }
-.material-container--secondary {
+.material-inverted--primary {
+	color: var(--md-sys-color-primary-container);
+	background-color: var(--md-sys-color-on-primary-container);
+}
+
+.material-colored--secondary {
 	color: var(--md-sys-color-on-secondary);
 	background-color: var(--md-sys-color-secondary);
 }
-.material-container--color-on-secondary {
+.material-basic--secondary {
 	color: var(--md-sys-color-secondary);
+	background-color: var(--md-sys-color-on-secondary);
+}
+.material-container--secondary {
+	color: var(--md-sys-color-on-secondary-container);
 	background-color: var(--md-sys-color-secondary-container);
 }
+.material-inverted--secondary {
+	color: var(--md-sys-color-secondary-container);
+	background-color: var(--md-sys-color-on-secondary-container);
+}
+
 .material-container--tertiary {
-	color: var(--md-sys-color-on-tertiary);
-	background-color: var(--md-sys-color-tertiary);
+	color: var(--md-sys-color-on-tertiary-container);
+	background-color: var(--md-sys-color-tertiary-container);
+}
+
+.material-outline {
+	--tw-border-opacity: 1;
+	border-color: var(--md-sys-color-outline);
 }
 
 .material-text--on-background {
@@ -82,16 +101,15 @@ body {
     padding: 0rem 1.5rem;
     border-radius: 100px;
     text-decoration: none;
-    line-height: 3rem;
     height: 3rem;
     border: transparent solid 2px;
 }
 .material-button:hover {
     border: var(--md-sys-color-outline) solid 2px;
 }
-.material-button--primary {
-	color: var(--md-sys-color-on-primary-container);
-    background-color: var(--md-sys-color-primary-container);
+.material-button--filled-primary {
+	color: var(--md-sys-color-on-primary);
+	background-color: var(--md-sys-color-primary);
 }
 .material-button--tertiary {
 	color: var(--md-sys-color-on-tertiary-container);
