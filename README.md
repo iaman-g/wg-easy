@@ -1,11 +1,11 @@
 # WireGuard Easy
 
-[![Build & Publish Docker Image to Docker Hub](https://github.com/WeeJeWel/wg-easy/actions/workflows/deploy.yml/badge.svg?branch=production)](https://github.com/WeeJeWel/wg-easy/actions/workflows/deploy.yml)
-[![Lint](https://github.com/WeeJeWel/wg-easy/actions/workflows/lint.yml/badge.svg?branch=master)](https://github.com/WeeJeWel/wg-easy/actions/workflows/lint.yml)
-[![Docker](https://img.shields.io/docker/v/weejewel/wg-easy/latest)](https://hub.docker.com/r/weejewel/wg-easy)
-[![Docker](https://img.shields.io/docker/pulls/weejewel/wg-easy.svg)](https://hub.docker.com/r/weejewel/wg-easy)
+[![Build & Publish Docker Image to Docker Hub](https://github.com/Dartegnian/wg-easy-m3/actions/workflows/deploy.yml/badge.svg?branch=production)](https://github.com/Dartegnian/wg-easy-m3/actions/workflows/deploy.yml)
+[![Lint](https://github.com/Dartegnian/wg-easy-m3/actions/workflows/lint.yml/badge.svg?branch=master)](https://github.com/Dartegnian/wg-easy-m3/actions/workflows/lint.yml)
+[![Docker](https://img.shields.io/docker/v/dartegnian/wg-easy-m3/latest)](https://hub.docker.com/r/dartegnian/wg-easy-m3)
+[![Docker](https://img.shields.io/docker/pulls/dartegnian/wg-easy-m3.svg)](https://hub.docker.com/r/dartegnian/wg-easy-m3)
 [![Sponsor](https://img.shields.io/github/sponsors/weejewel)](https://github.com/sponsors/WeeJeWel)
-![GitHub Stars](https://img.shields.io/github/stars/weejewel/wg-easy)
+![GitHub Stars](https://img.shields.io/github/stars/dartegnian/wg-easy-m3)
 
 You have found the easiest way to install & manage WireGuard on any Linux host!
 
@@ -60,7 +60,7 @@ $ docker run -d \
   --sysctl="net.ipv4.conf.all.src_valid_mark=1" \
   --sysctl="net.ipv4.ip_forward=1" \
   --restart unless-stopped \
-  weejewel/wg-easy
+  dartegnian/wg-easy-m3
 </pre>
 
 > 💡 Replace `YOUR_SERVER_IP` with your WAN IP, or a Dynamic DNS hostname.
