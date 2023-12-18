@@ -1,6 +1,6 @@
 # WireGuard Easy
 
-[![Build & Publish Docker Image to Docker Hub](https://github.com/Dartegnian/wg-easy-m3/actions/workflows/deploy.yml/badge.svg?branch=production)](https://github.com/Dartegnian/wg-easy-m3/actions/workflows/deploy.yml)
+[![Build & Publish Docker Image to Docker Hub](https://github.com/Dartegnian/wg-easy-m3/actions/workflows/deploy.yml/badge.svg)](https://github.com/Dartegnian/wg-easy-m3/actions/workflows/deploy.yml)
 [![Lint](https://github.com/Dartegnian/wg-easy-m3/actions/workflows/lint.yml/badge.svg?branch=master)](https://github.com/Dartegnian/wg-easy-m3/actions/workflows/lint.yml)
 [![Docker](https://img.shields.io/docker/v/dartegnian/wg-easy-m3/latest)](https://hub.docker.com/r/dartegnian/wg-easy-m3)
 [![Docker](https://img.shields.io/docker/pulls/dartegnian/wg-easy-m3.svg)](https://hub.docker.com/r/dartegnian/wg-easy-m3)
