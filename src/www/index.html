@@ -491,17 +491,17 @@
         <h1 class="text-4xl font-medium my-16 text-gray-700 dark:text-neutral-200 text-center">WireGuard</h1>
 
         <form @submit="login"
-          class="shadow rounded-md bg-white dark:bg-neutral-700 mx-auto w-64 p-5 overflow-hidden mt-10">
+          class="shadow material-container material-container--secondary mx-auto w-64 p-5 overflow-hidden mt-10">
           <!-- Avatar -->
-          <div class="h-20 w-20 mb-10 mt-5 mx-auto rounded-full bg-red-800 dark:bg-red-800 relative overflow-hidden">
-            <svg class="w-10 h-10 m-5 text-white dark:text-white" xmlns="http://www.w3.org/2000/svg"
+          <div class="material-inverted--secondary material-mask--jagged-circle h-40 w-40 mb-10 mt-5 mx-auto rounded-full relative overflow-hidden flex p-3">
+            <svg class="material-colored--secondary material-mask--jagged-circle flex-1 flex mx-auto px-5" xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20 20" fill="currentColor">
               <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" />
             </svg>
           </div>
 
           <input type="password" name="password" placeholder="Password" v-model="password"
-            class="px-3 py-2 text-sm dark:bg-neutral-700 text-gray-500 dark:text-gray-500 mb-5 border-2 border-gray-100 dark:border-neutral-800 rounded-lg w-full focus:border-red-800 dark:focus:border-red-800 dark:placeholder:text-neutral-400 outline-none" />
+            class="px-3 py-2 text-sm material-container material-basic--secondary mb-5 border-2 material-outline w-full" />
 
           <button v-if="authenticating"
             class="bg-red-800 dark:bg-red-800 w-full rounded shadow py-2 text-sm text-white dark:text-white cursor-not-allowed">
@@ -514,10 +514,10 @@
             </svg>
           </button>
           <input v-if="!authenticating && password" type="submit"
-            class="bg-red-800 dark:bg-red-800 w-full rounded shadow py-2 text-sm text-white dark:text-white hover:bg-red-700 dark:hover:bg-red-700 transition cursor-pointer"
+            class="material-button material-colored--secondary w-full shadow py-2 text-sm transition cursor-pointer"
             value="Sign In">
           <input v-if="!authenticating && !password" type="submit"
-            class="bg-gray-200 dark:bg-neutral-800 w-full rounded shadow py-2 text-sm text-white dark:text-white cursor-not-allowed"
+            class="material-button material-basic--secondary w-full shadow py-2 text-sm cursor-not-allowed"
             value="Sign In">
         </form>
       </div>
