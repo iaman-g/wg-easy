@@ -372,12 +372,12 @@
           To: "opacity-0 tranneutral-y-4 sm:tranneutral-y-0 sm:scale-95"
       -->
             <div
-              class="inline-block align-bottom bg-white dark:bg-neutral-700 rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg w-full"
+              class="inline-block align-bottom material-container material-background--tertiary text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg w-full"
               role="dialog" aria-modal="true" aria-labelledby="modal-headline">
-              <div class="bg-white dark:bg-neutral-700 px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+              <div class="px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
                 <div class="sm:flex sm:items-start">
                   <div
-                    class="mx-auto flex-shrink-0 flex items-center justify-center h-12 w-12 rounded-full bg-red-800 sm:mx-0 sm:h-10 sm:w-10">
+                    class="mx-auto flex-shrink-0 flex items-center justify-center h-12 w-12 rounded-full material-container--tertiary sm:mx-0 sm:h-10 sm:w-10">
                     <svg class="h-6 w-6 text-white" inline xmlns="http://www.w3.org/2000/svg"
                       fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -385,30 +385,30 @@
                     </svg>
                   </div>
                   <div class="flex-grow mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
-                    <h3 class="text-lg leading-6 font-medium text-gray-900 dark:text-neutral-200" id="modal-headline">
+                    <h3 class="text-lg leading-6 font-medium" id="modal-headline">
                       New Client
                     </h3>
                     <div class="mt-2">
                       <p class="text-sm text-gray-500">
                         <input
-                          class="rounded p-2 border-2 dark:bg-neutral-700 dark:text-neutral-200 border-gray-100 dark:border-neutral-600 focus:border-gray-200 focus:dark:border-neutral-500 dark:placeholder:text-neutral-400 outline-none w-full"
+                          class="rounded p-2 border-2 material-basic--tertiary material-outline outline-none w-full"
                           type="text" v-model.trim="clientCreateName" placeholder="Name" />
                       </p>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="bg-gray-50 dark:bg-neutral-700 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
+              <div class="px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
                 <button v-if="clientCreateName.length" type="button" @click="createClient(); clientCreate = null"
-                  class="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 material-background--tertiary text-base font-medium text-white hover:bg-red-700 focus:outline-none sm:ml-3 sm:w-auto sm:text-sm">
+                  class="w-full inline-flex justify-center border shadow-sm px-4 py-2 material-button material-basic--tertiary text-base font-medium sm:ml-3 sm:w-auto sm:text-sm">
                   Create
                 </button>
                 <button v-else type="button"
-                  class="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-gray-200 dark:bg-neutral-400 text-base font-medium text-white dark:text-neutral-300 sm:ml-3 sm:w-auto sm:text-sm cursor-not-allowed">
+                  class="w-full inline-flex justify-center border shadow-sm px-4 py-2 material-button material-basic--tertiary text-base font-medium sm:ml-3 sm:w-auto sm:text-sm cursor-not-allowed opacity-50">
                   Create
                 </button>
                 <button type="button" @click="clientCreate = null"
-                  class="mt-3 w-full inline-flex justify-center rounded-md border border-gray-300 dark:border-neutral-500 shadow-sm px-4 py-2 bg-white dark:bg-neutral-500 text-base font-medium text-gray-700 dark:text-neutral-50 hover:bg-gray-50 dark:hover:bg-neutral-600 dark:hover:border-neutral-600 focus:outline-none sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm">
+                  class="mt-3 w-full inline-flex justify-center border shadow-sm px-4 py-2 material-button material-basic--tertiary text-base font-medium sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm">
                   Cancel
                 </button>
               </div>
