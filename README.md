@@ -1,4 +1,4 @@
-# WireGuard Easy
+# WireGuard Easy M3/Material You
 
 [![Build & Publish Docker Image to Docker Hub](https://github.com/Dartegnian/wg-easy-m3/actions/workflows/deploy.yml/badge.svg)](https://github.com/Dartegnian/wg-easy-m3/actions/workflows/deploy.yml)
 [![Lint](https://github.com/Dartegnian/wg-easy-m3/actions/workflows/lint.yml/badge.svg?branch=master)](https://github.com/Dartegnian/wg-easy-m3/actions/workflows/lint.yml)
