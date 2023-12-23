@@ -59,11 +59,11 @@ body {
 
 .material-colored--secondary {
 	color: var(--md-sys-color-on-secondary);
-	background-color: var(--md-sys-color-secondary);
+	background-color: var(--md-sys-color-secondary) !important;
 }
 .material-basic--secondary {
 	color: var(--md-sys-color-secondary);
-	background-color: var(--md-sys-color-on-secondary);
+	background-color: var(--md-sys-color-on-secondary) !important;
 }
 .material-container--secondary {
 	color: var(--md-sys-color-on-secondary-container);
