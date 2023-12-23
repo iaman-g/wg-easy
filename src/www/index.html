@@ -66,7 +66,7 @@
     <div v-cloak class="container mx-auto max-w-3xl px-5 md:px-0">
 
       <div v-if="authenticated === true">
-        <span v-if="requiresPassword"
+        <!-- <span v-if="requiresPassword"
           class="text-sm text-gray-400 dark:text-neutral-400 mb-10 mr-2 mt-3 cursor-pointer hover:underline float-right"
           @click="logout">
           Logout
@@ -79,7 +79,7 @@
         <h1 class="text-4xl dark:text-neutral-200 font-medium mt-2 mb-2">
           <img src="./img/logo.png" width="32" class="inline align-middle dark:bg" />
           <span class="align-middle">WireGuard</span>
-        </h1>
+        </h1> -->
         <h2 class="text-sm text-gray-400 dark:text-neutral-400 mb-10"></h2>
 
         <div v-if="latestRelease"
@@ -154,9 +154,9 @@
                     <div
                       v-if="client.latestHandshakeAt && ((new Date() - new Date(client.latestHandshakeAt) < 1000 * 60 * 10))">
                       <div
-                        class="animate-ping w-4 h-4 p-1 bg-red-100 dark:bg-red-100 rounded-full absolute -bottom-1 -right-1">
+                        class="animate-ping w-4 h-4 p-1 material-colored--tertiary rounded-full absolute -bottom-1 -right-1">
                       </div>
-                      <div class="w-2 h-2 bg-red-800 dark:bg-red-600 rounded-full absolute bottom-0 right-0"></div>
+                      <div class="w-2 h-2 material-colored--tertiary rounded-full absolute bottom-0 right-0"></div>
                     </div>
                   </div>
 
@@ -488,7 +488,7 @@
       </div>
 
       <div v-if="authenticated === false">
-        <h1 class="text-4xl font-medium my-16 text-gray-700 dark:text-neutral-200 text-center">WireGuard</h1>
+        <!-- <h1 class="text-4xl font-medium my-16 text-gray-700 dark:text-neutral-200 text-center">WireGuard</h1> -->
 
         <form @submit="login"
           class="shadow material-container material-container--secondary mx-auto w-64 p-5 overflow-hidden mt-10">
