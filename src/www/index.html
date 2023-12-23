@@ -143,8 +143,8 @@
 
               <div class="relative p-5 z-10 flex flex-col md:flex-row justify-between">
                 <div class="flex items-center pb-2 md:pb-0">
-                  <div class="h-10 w-10 mr-5 rounded-full bg-gray-50 relative">
-                    <svg class="w-6 m-2 text-gray-300" xmlns="http://www.w3.org/2000/svg"
+                  <div class="h-10 w-10 mr-5 rounded-full material-basic--secondary relative">
+                    <svg class="w-6 m-2" xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 20 20" fill="currentColor">
                       <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
                         clip-rule="evenodd" />
@@ -171,7 +171,7 @@
                         v-on:keyup.enter="updateClientName(client, clientEditName); clientEditName = null; clientEditNameId = null;"
                         v-on:keyup.escape="clientEditName = null; clientEditNameId = null;"
                         :ref="'client-' + client.id + '-name'"
-                        class="rounded px-1 border-2 dark:bg-neutral-700 border-gray-100 dark:border-neutral-600 focus:border-gray-200 dark:focus:border-neutral-500 dark:placeholder:text-neutral-500 outline-none w-30" />
+                        class="rounded px-1 border-2 material-basic--secondary material-outline outline-none w-30" />
                       <span v-show="clientEditNameId !== client.id"
                         class="inline-block border-t-2 border-b-2 border-transparent">{{client.name}}</span>
 
@@ -199,7 +199,7 @@
                           v-on:keyup.enter="updateClientAddress(client, clientEditAddress); clientEditAddress = null; clientEditAddressId = null;"
                           v-on:keyup.escape="clientEditAddress = null; clientEditAddressId = null;"
                           :ref="'client-' + client.id + '-address'"
-                          class="rounded border-2 dark:bg-neutral-700 border-gray-100 dark:border-neutral-600 focus:border-gray-200 dark:focus:border-neutral-500 outline-none w-20 text-black dark:text-neutral-300 dark:placeholder:text-neutral-500" />
+                          class="rounded border-2 material-basic--secondary material-outline outline-none w-20" />
                         <span v-show="clientEditAddressId !== client.id"
                           class="inline-block border-t-2 border-b-2 border-transparent">{{client.address}}</span>
 
