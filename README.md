@@ -10,7 +10,10 @@
 You have found the easiest way to install & manage WireGuard on any Linux host!
 
 <p align="center">
-  <img src="./assets/screenshot.png" width="802" />
+  <img src="./assets/m3-screenshot1xl.jpg" width="802" />
+</p>
+<p align="center">
+  <img src="./assets/m3-screenshot3.png" width="802" />
 </p>
 
 ## Features
