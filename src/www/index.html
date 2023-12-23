@@ -98,14 +98,14 @@
           </div>
         </div>
 
-        <div class="shadow-md rounded-lg bg-white dark:bg-neutral-700 overflow-hidden">
-          <div class="flex flex-row flex-auto items-center p-3 px-5 border-b-2 border-gray-100 dark:border-neutral-600">
+        <div class="shadow-md material-container material-container--secondary overflow-hidden">
+          <div class="flex flex-row flex-auto items-center p-3 px-5 border-b-2 material-outline">
             <div class="flex-grow">
               <p class="text-2xl font-medium dark:text-neutral-200">Clients</p>
             </div>
             <div class="flex flex-shrink-0">
               <button @click="clientCreate = true; clientCreateName = '';"
-                class="hover:bg-red-800 hover:border-red-800 hover:text-white text-gray-700 dark:text-neutral-200 border-2 border-gray-100 dark:border-neutral-600 py-2 px-4 rounded inline-flex items-center transition">
+                class="material-button material-button--filled-primary py-2 px-4 inline-flex items-center transition">
                 <svg class="w-4 mr-2" inline xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                   stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -304,7 +304,7 @@
               <p class="text-center m-10 text-gray-400 dark:text-neutral-400 text-sm">
                 There are no clients yet.<br /><br />
                 <button @click="clientCreate = true; clientCreateName = '';"
-                  class="bg-red-800 hover:bg-red-700 text-white border-2 border-none py-2 px-4 rounded inline-flex items-center transition">
+                  class="material-button material-button--filled-primary border-2 border-none py-2 px-4 inline-flex items-center transition">
                   <svg class="w-4 mr-2" inline xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                     stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
