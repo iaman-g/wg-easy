@@ -74,10 +74,23 @@ body {
 	background-color: var(--md-sys-color-on-secondary-container);
 }
 
+.material-colored--tertiary {
+	color: var(--md-sys-color-on-tertiary);
+	background-color: var(--md-sys-color-tertiary);
+}
+.material-basic--tertiary {
+	color: var(--md-sys-color-tertiary);
+	background-color: var(--md-sys-color-on-tertiary) !important;
+}
 .material-container--tertiary {
 	color: var(--md-sys-color-on-tertiary-container);
 	background-color: var(--md-sys-color-tertiary-container);
 }
+.material-inverted--tertiary {
+	color: var(--md-sys-color-tertiary-container);
+	background-color: var(--md-sys-color-on-tertiary-container);
+}
+
 
 .material-outline {
 	--tw-border-opacity: 1;
