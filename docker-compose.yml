@@ -10,7 +10,7 @@ services:
       - LANG=en
       # ⚠️ Required:
       # Change this to your host's public address
-      - WG_HOST=raspberrypi.local
+      - WG_HOST=wg.dartegnian.com
 
       # Optional:
       # - PASSWORD=foobar123
