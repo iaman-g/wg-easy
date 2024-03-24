@@ -4,12 +4,13 @@ on:
   push:
     branches: [ "master" ]
   schedule:
-    - cron: "0 0 * * *"
+    - cron: "0 0 * * 1"
 
 jobs:
   npmupbot:
     name: NPM Update Bot 🤖
     runs-on: ubuntu-latest
+    if: github.repository_owner == 'wg-easy'
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4

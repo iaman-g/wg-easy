@@ -27,6 +27,8 @@ You have found the easiest way to install & manage WireGuard on any Linux host!
 * Tx/Rx charts for each connected client.
 * Gravatar support.
 * Automatic Light / Dark Mode
+* Multilanguage Support
+* UI_TRAFFIC_STATS (default off)
 
 ## Requirements
 
@@ -40,9 +42,9 @@ You have found the easiest way to install & manage WireGuard on any Linux host!
 If you haven't installed Docker yet, install it by running:
 
 ```bash
-$ curl -sSL https://get.docker.com | sh
-$ sudo usermod -aG docker $(whoami)
-$ exit
+curl -sSL https://get.docker.com | sh
+sudo usermod -aG docker $(whoami)
+exit
 ```
 
 And log in again.
@@ -76,6 +78,10 @@ The Web UI will now be available on `http://0.0.0.0:51821`.
 
 > 💡 Your configuration files will be saved in `~/.wg-easy`
 
+WireGuard Easy can be launched with Docker Compose as well - just download
+[`docker-compose.yml`](docker-compose.yml), make necessary adjustments and
+execute `docker compose up --detach`.
+
 ### 3. Sponsor
 
 Are you enjoying this project? [Buy Emile a beer!](https://github.com/sponsors/WeeJeWel) 🍻
@@ -101,6 +107,8 @@ These options can be configured by setting environment variables using `-e KEY="
 | `WG_POST_UP` | `...` | `iptables ...` | See [config.js](https://github.com/wg-easy/wg-easy/blob/master/src/config.js#L20) for the default value. |
 | `WG_PRE_DOWN` | `...` | - | See [config.js](https://github.com/wg-easy/wg-easy/blob/master/src/config.js#L27) for the default value. |
 | `WG_POST_DOWN` | `...` | `iptables ...` | See [config.js](https://github.com/wg-easy/wg-easy/blob/master/src/config.js#L28) for the default value. |
+| `LANG` | `en` | `de` | Web UI language (Supports: en, ua, ru, tr, no, pl, fr, de, ca, es, ko, vi, nl, is, pt, chs, cht, it, th, hi). |
+| `UI_TRAFFIC_STATS` | `false` | `true` | Enable detailed RX / TX client stats in Web UI |
 
 > If you change `WG_PORT`, make sure to also change the exposed port.
 
@@ -115,6 +123,16 @@ docker pull dartegnian/wg-easy-m3
 ```
 
 And then run the `docker run -d \ ...` command above again.
+
+To update using Docker Compose:
+
+```shell
+docker compose pull
+docker compose up --detach
+```
+
+The WireGuared Easy container will be automatically recreated if a newer image
+was pulled.
 
 ## Common Use Cases
 
