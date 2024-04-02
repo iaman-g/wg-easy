@@ -53,9 +53,8 @@ And log in again.
 
 To automatically install & run wg-easy, simply run:
 
-<pre>
-$ docker run -d \
-  --name=wg-easy \
+```
+  docker run -d \  --name=wg-easy-m3 \
   -e LANG=en \
   -e WG_HOST=<b>🚨YOUR_SERVER_IP</b> \
   -e PASSWORD=<b>🚨YOUR_ADMIN_PASSWORD</b> \
@@ -68,7 +67,7 @@ $ docker run -d \
   --sysctl="net.ipv4.ip_forward=1" \
   --restart unless-stopped \
   dartegnian/wg-easy-m3
-</pre>
+```
 
 > 💡 Replace `YOUR_SERVER_IP` with your WAN IP, or a Dynamic DNS hostname.
 >
@@ -118,8 +117,8 @@ These options can be configured by setting environment variables using `-e KEY="
 To update to the latest version, simply run:
 
 ```bash
-docker stop wg-easy
-docker rm wg-easy
+docker stop wg-easy-m3
+docker rm wg-easy-m3
 docker pull dartegnian/wg-easy-m3
 ```
 
