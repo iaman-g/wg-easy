@@ -1,4 +1,3 @@
-version: "3.8"
 services:
   wg-easy-m3:
     image: wg-easy-m3
